@@ -16,14 +16,15 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 @app.route("/get_tasks")
 def get_tasks():
-    tasks = mongo.db.tasks.find()
-    return render_template("tasks.html", tasks=tasks)
+    task = mongo.db.task.find()
+    return render_template("tasks.html", task=task)
 
 
 if __name__ == "__main__":
-     app.run(host=os.environ.get("IP"),
-        port=int(os.environ.get("PORT")),
-        debug=True)   
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")),
+            debug=True)  

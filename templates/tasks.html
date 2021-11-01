@@ -1,0 +1,14 @@
+
+{% extends "base.html"%}
+{% block content %}
+
+    {% for item in task %}
+        {{ item.category_name }}<br>
+        {{ item.about_name }}<br>
+        {{ item.task_name }}<br>
+        {{ item.task_tools }}<br>
+        {{ item.task_ingredients}}<br>
+    {% endfor %}
+
+
+{% endblock %}
