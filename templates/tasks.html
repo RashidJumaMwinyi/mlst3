@@ -2,12 +2,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for item in task %}
-        {{ item.category_name }}<br>
-        {{ item.about_name }}<br>
-        {{ item.task_name }}<br>
-        {{ item.task_tools }}<br>
-        {{ item.task_ingredients}}<br>
+<a class="waves-effect waves-light btn-small btn1" id="btn">Deseert</a>
+<a class="waves-effect waves-light btn-small" id="btn">Beef</a>
+<a class="waves-effect waves-light btn-small" id="btn">Pasata</a><br>
+
+    {% for item in home %}
+        {{ item.home_name }}<br>
+        {{ item.home_description }}<br>
+        {{ item.home_image }}<br>
+        {{ item.home_calories }}<br>
+        {{ item.home_add_cusine}}<br>
     {% endfor %}
 
 

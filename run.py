@@ -21,15 +21,15 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_tasks")
 def get_tasks():
-    task = mongo.db.task.find()
-    return render_template("tasks.html", task=task)
+    home = mongo.db.home.find()
+    return render_template("tasks.html", home=home)
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
         # check if username already exists in db
-        existing_user = mongo.db.users.find_one(
+        existing_user = mongo.db.user.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
@@ -96,6 +96,10 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+@app.route("/add_cusine")
+def add_cusine():
+    return render_template("add_cusine.html")
 
 
 if __name__ == "__main__":
