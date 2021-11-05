@@ -7,3 +7,43 @@
     margin-right: 15%;
     margin-bottom: 2%;
 }
+header.masthead {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 8rem;
+    background: no-repeat center center;
+        background-color: rgba(0, 0, 0, 0);
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;}
+
+.subheading, h1{
+    color: white;
+    margin-left: 15%;
+
+}
+.subheading{
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+nav ul a{
+    color: black;
+    font-size: 1.2rem;
+}
+nav .brand-logo {
+    position: absolute;
+    color: #1a1919;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+nav a {
+    color: #131212;
+}
+nav{
+    background-color: white;
+}
