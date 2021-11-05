@@ -3,9 +3,7 @@
 }
 #btn{
     padding: 0 40px;
-    margin-top: 2%;
-    margin-right: 15%;
-    margin-bottom: 2%;
+    margin: auto 1% 2% 16%;
 }
 header.masthead {
     position: relative;
@@ -46,4 +44,70 @@ nav a {
 }
 nav{
     background-color: white;
+}
+
+#form{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 15%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+
+.col-md-4 img{
+    width: 100%;
+    border-radius: 16px;
+    padding: 8px;
+}
+.col-md-5 img{
+    width: 100%;
+    border-radius: 16px;
+    padding: 8px;
+}
+.flex-container{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view-button{
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    padding: 10px 0;
+    background-color: #404041;
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-top: 10px;
+    align-self: flex-start;
+    border-radius: 6px;
+}
+.item-data{
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+.foot-menu {
+    text-align: center;
+}
+.foot-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.foot-menu ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+legend{
+    border: 20px;
 }
