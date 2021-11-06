@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+import json
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -100,6 +101,31 @@ def logout():
 @app.route("/add_cusine")
 def add_cusine():
     return render_template("add_cusine.html")
+
+
+# This render's an html file with a click on the home button labelled accordingly
+@app.route("/pasta")
+def pasta():
+    with open("data/cusine.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("pasta.html",page_title="Pasta",cusine=data)
+
+
+# This render's an html file with a click on the home button labelled accordingly
+@app.route("/beef")
+def beef():
+    with open("data/cusine.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("beef.html",page_title="beef",cusine=data)
+
+
+# This render's an html file with a click on the home button labelled accordingly
+@app.route("/dessert")
+def dessert():
+    with open("data/cusine.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("dessert.html",page_title="dessert",cusine=data)
+
 
 
 if __name__ == "__main__":
