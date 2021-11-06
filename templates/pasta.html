@@ -1,28 +1,14 @@
+{% extends "base.html" %}
 {% block content %}
-    <h1>{{ page_title }}</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-3">
-                <button class="btn btn-default"><a href="{{url_for('recipe')}}">Dessert</a></button>
-            </div>
-            <div class="col-xs-3 text-center">
-                <button class="btn btn-default"><a href="{{url_for('beef')}}">Beef</a></button>
-            </div>
-            <div class="col-xs-3 text-right">
-                <button class="btn btn-default"><a href="{{url_for('pasta')}}">Pasta</a></button>
-            </div>
-            <div class="col-xs-3 text-right">
-                <button class="btn btn-default"><a href="{{url_for('createrecipe')}}">Create Recipe</a></button>
-            </div>
-        </div>
-    </div>
-    {% for item in recipe['pasta'] %}
-    
+<h1>{{ page_title }}</h1>
+
+{% for item in cusine['pasta'] %}
+    <div id="pasta">
         <div class="row featurette">
             <div class="col-md-7">
                 <h3>{{ item.name }}</h3>
                 <p>
-                   {{ item.description }}
+                    {{ item.description }}
                 </p>
             </div>
             <div class="col-md-5">
@@ -30,13 +16,10 @@
                 <div class="flex-container">
                     <a class="view-button" href="#">View Recipe</a>
                 </div>
-                <p class="item-data">Calories: 140</p>   
+                <p class="item-data">Calories: 140</p>
             </div>
-            
-            
         </div>
-        
-
-    {% endfor %}
+    </div>    
+{% endfor %}
 
 {% endblock %}
