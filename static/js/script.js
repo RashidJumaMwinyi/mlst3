@@ -11,3 +11,7 @@ function openForm() {
 function closeForm() {
     document.getElementById("form").style.display = "none";
 }
+
+function openForm() {
+    document.getElementById("pasta").style.display = "block";
+}
