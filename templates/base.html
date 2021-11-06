@@ -50,7 +50,8 @@
 </ul>
 
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/landing-bg.jpg') }}')">
+    <header class="masthead" style="background-image: url(
+        '{{ url_for('static', filename='img/landing-bg.jpg') }}')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -63,9 +64,19 @@
         </div>
     </header>
 
-    <a class="waves-effect waves-light btn-small" id="btn">Dessert</a>
-<a class="waves-effect waves-light btn-small" id="btn">Beef</a>
-<a class="waves-effect waves-light btn-small" id="btn">Pasta</a><br>
+    <!--these are buttons that load the linked files when the user clicks-->
+    <a onclick="openBtn()" href="{{ url_for('dessert') }}"
+         class="waves-effect waves-light btn-small"
+         id="btn" onclick="openBtn()">Dessert
+    </a>
+   <a onclick="openBtn()" href="{{ url_for('beef') }}"
+         class="waves-effect waves-light btn-small"
+          id="btn" onclick="openBtn()">Beef
+    </a>
+    <a onclick="openBtn()" href="{{ url_for('pasta') }}"
+         class="waves-effect waves-light btn-small"
+          id="btn">Pasta</a>
+    <br>
     <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
