@@ -1,16 +1,26 @@
 
-{% extends "base.html" %}
+    {% extends "base.html" %}
 {% block content %}
 
 
+ <!--these are buttons that load the linked files when the user clicks-->
+ <a onclick="openBtn()" href="{{ url_for('dessert') }}"
+ class="waves-effect waves-light btn-small"
+ id="btn">Dessert
+</a>
+<a onclick="openBtn()" href="{{ url_for('beef') }}"
+ class="waves-effect waves-light btn-small"
+  id="btn" onclick="openBtn()">Beef
+</a>
+<a onclick="openBtn()" href="{{ url_for('pasta') }}"
+ class="waves-effect waves-light btn-small"
+  id="btn">Pasta</a>
+<br>
 
-    {% for item in home %}
-        {{ item.home_name }}<br>
-        {{ item.home_description }}<br>
-        {{ item.home_image }}<br>
-        {{ item.home_calories }}<br>
-        {{ item.home_add_cusine}}<br>
-    {% endfor %}
-
-
+<h2>About</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum nisi, quos quisquam, architecto illo
+    reprehenderit cupiditate fuga eos itaque vero aliquid maiores at, excepturi fugiat! Atque in tempora ut.
+</p>
 {% endblock %}
+
