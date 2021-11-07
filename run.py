@@ -101,7 +101,8 @@ def logout():
 
 @app.route("/add_cusine")
 def add_cusine():
-    return render_template("add_cusine.html")
+    categories = mongo.db.category.find().sort("category_name", 1)
+    return render_template("add_cusine.html", categories = categories)
 
 
 # This render's an html file with a click on the home button labelled accordingly
