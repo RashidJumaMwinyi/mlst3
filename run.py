@@ -23,7 +23,7 @@ mongo = PyMongo(app)
 @app.route("/get_cusine")
 def get_cusine():
     task = mongo.db.task.find()
-    return render_template("task.html", task=task)
+    return render_template("tasks.html", task=task)
 
 
 
