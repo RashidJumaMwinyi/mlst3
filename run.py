@@ -20,10 +20,12 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+
+
 @app.route("/get_cusine")
 def get_cusine():
-    task = mongo.db.task.find()
-    return render_template("tasks.html", task=task)
+    cusines = mongo.db.cusines.find()
+    return render_template("cusines.html", cusines=cusines)
 
 
 
@@ -120,22 +122,11 @@ def add_cusine():
 
 
 
-@app.route("/edit_cusine/<task_id>", methods = ["GET", "POST"])
-def edit_cusine():
-    if request.method == "POST":
-        submit = {
-            "category_name" : request.form.get("category_name"),
-            "task_name" : request.form.get("task_name"),
-            "task_description" : request.form.get("task_description"),
-            "task_ingredients" : request.form.get("task_ingredients"),
-            "created_by" : session["user"]
-        }
-        mongo.db.task.update({"_id": ObjectId(task_id)},submit)
-        flash("Cusine successfully Updated")
-        
-    task = mongo.db.task.find_one({"_id": ObjectId(task_id)})
-    categories = mongo.db.category.find().sort("category_name", 1)
-    return render_template("edit_cusine.html", categories = categories)
+@app.route("/edit_cusine/<cusine_id>", methods = ["GET", "POST"])
+def edit_cusine(cusine_id):    
+    cusine = mongo.db.cusines.find_one({"_id": ObjectId(cusine_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_cusine.html",cusine=cusine, categories = categories)
 
 
 # This render's an html file with a click on the home button labelled accordingly
