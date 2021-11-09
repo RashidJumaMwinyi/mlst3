@@ -99,6 +99,8 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+
+
 @app.route("/add_cusine", methods = ["GET", "POST"])
 def add_cusine():
     if request.method == "POST":
@@ -115,6 +117,25 @@ def add_cusine():
 
     categories = mongo.db.category.find().sort("category_name", 1)
     return render_template("add_cusine.html", categories = categories)
+
+
+
+@app.route("/edit_cusine/<task_id>", methods = ["GET", "POST"])
+def edit_cusine():
+    if request.method == "POST":
+        submit = {
+            "category_name" : request.form.get("category_name"),
+            "task_name" : request.form.get("task_name"),
+            "task_description" : request.form.get("task_description"),
+            "task_ingredients" : request.form.get("task_ingredients"),
+            "created_by" : session["user"]
+        }
+        mongo.db.task.update({"_id": ObjectId(task_id)},submit)
+        flash("Cusine successfully Updated")
+        
+    task = mongo.db.task.find_one({"_id": ObjectId(task_id)})
+    categories = mongo.db.category.find().sort("category_name", 1)
+    return render_template("edit_cusine.html", categories = categories)
 
 
 # This render's an html file with a click on the home button labelled accordingly
