@@ -148,6 +148,14 @@ def delete_cusine(cusine_id):
     return redirect(url_for("get_cusine"))
 
 
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories)
+
+
+
+
 
 # This render's an html file with a click on the home button labelled accordingly
 @app.route("/pasta")
