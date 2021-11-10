@@ -107,18 +107,18 @@ def logout():
 @app.route("/add_cusine", methods = ["GET", "POST"])
 def add_cusine():
     if request.method == "POST":
-        task = {
+        cusines = {
             "category_name" : request.form.get("category_name"),
             "task_name" : request.form.get("task_name"),
             "task_description" : request.form.get("task_description"),
             "task_ingredients" : request.form.get("task_ingredients"),
             "created_by" : session["user"]
         }
-        mongo.db.task.insert_one(task)
+        mongo.db.cusines.insert_one(cusines)
         flash("Cusine successfully Added")
         return redirect(url_for("get_cusine"))
 
-    categories = mongo.db.category.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_cusine.html", categories = categories)
 
 
@@ -140,11 +140,13 @@ def edit_cusine(cusine_id):
     return render_template("edit_cusine.html",cusine=cusine, categories = categories)
 
 
+
 @app.route("/delete_cusine/<cusine_id>")
 def delete_cusine(cusine_id):
     mongo.db.cusines.remove({"_id":ObjectId(cusine_id)})
     flash("Cusine successfully Deleted") 
     return redirect(url_for("get_cusine"))
+
 
 
 # This render's an html file with a click on the home button labelled accordingly
