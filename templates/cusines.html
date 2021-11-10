@@ -30,7 +30,7 @@ id="btn">Pasta</a>
             <div class="col s3">
                 <i class="fas fa-caret-down"></i>
                 {% if session.user|lower == cusine.created_by|lower %}
-                <a href="" class="btn-small green accent-4">Done</a>
+                <a href="{{ url_for('delete_cusine', cusine_id=cusine._id) }}" class="btn-small green accent-4">Done</a>
                 <a href="{{ url_for('edit_cusine', cusine_id=cusine._id) }}" class="btn-small light-blue lighten-1">Edit</a>
                 {% endif %}
             </div>

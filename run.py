@@ -140,6 +140,13 @@ def edit_cusine(cusine_id):
     return render_template("edit_cusine.html",cusine=cusine, categories = categories)
 
 
+@app.route("/delete_cusine/<cusine_id>")
+def delete_cusine(cusine_id):
+    mongo.db.cusines.remove({"_id":ObjectId(cusine_id)})
+    flash("Cusine successfully Deleted") 
+    return redirect(url_for("get_cusine"))
+
+
 # This render's an html file with a click on the home button labelled accordingly
 @app.route("/pasta")
 def pasta():
