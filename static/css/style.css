@@ -132,11 +132,11 @@ legend{
     border: 20px;
 }
 
-@media only screen and (max-width: 910px) /* For ipads/tablets: */ {
+@media only screen and (max-width: 980px) /* For ipads/tablets: */ {
 
-    #btn-small {
-        padding: 0 40px;
-        margin: auto 7% 1%;
+    #btn {
+        padding: 0 30px;
+        margin: auto 8% 1%;
     }
     
 
@@ -145,24 +145,21 @@ legend{
 
 @media only screen and (max-width: 780px) /* For ipads/tablets: */ {
 
-    #btn {
-        padding: 0 40px;
-        margin: 1% 7% auto;
-    }
-    
+    #btn{
+       padding: 0 40px;
+       margin: auto 7% 2%;
+   }
 
 
 }
+    
 
-@media only screen and (max-width: 499px) /* For mobile phones: */{
+@media only screen and (max-width: 780px) /* For ipads/tablets: */ {
 
     #btn{
-        padding: 0 30px;
-        margin: auto 1.4% 4%;
-    }
-
-
-
+       padding: 0 30px;
+       margin:1% 1% 2% 6%;
+   }
 
 
 }
