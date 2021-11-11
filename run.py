@@ -169,6 +169,30 @@ def add_category():
 
 
 
+@app.route("/edit_category/<category_id>", methods = ["GET","POST"])
+def edit_category(category_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.update({"_id" : ObjectId(category_id)},submit)
+        flash("Category Successfully Updated")
+        return redirect (url_for("get_categories"))
+
+    category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    return render_template("edit_category.html", category = category)
+
+
+
+
+@app.route("/delete_category/<category_id>")
+def delete_category(category_id):
+    mongo.db.categories.remove({"_id":ObjectId(category_id)})
+    flash("Category Successfully Deleted") 
+    return redirect(url_for("get_categories"))
+
+
+
 # This render's an html file with a click on the home button labelled accordingly
 @app.route("/pasta")
 def pasta():
