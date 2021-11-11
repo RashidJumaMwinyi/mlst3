@@ -10,7 +10,7 @@
 }
 #btn{
     padding: 0 40px;
-    margin: auto 1% auto 16%;
+    margin: auto 1% auto 15%;
 }
 header.masthead {
     position: relative;
@@ -132,11 +132,11 @@ legend{
     border: 20px;
 }
 
-@media only screen and (max-width: 980px) /* For ipads/tablets: */ {
+@media only screen and (max-width: 910px) /* For ipads/tablets: */ {
 
     #btn-small {
         padding: 0 40px;
-        margin: 1% 7% auto;
+        margin: auto 7% 1%;
     }
     
 
