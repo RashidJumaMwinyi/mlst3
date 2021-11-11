@@ -135,12 +135,33 @@ legend{
     border: 20px;
 }
 
+@media only screen and (max-width: 980px) /* For ipads/tablets: */ {
+
+    #btn-small {
+        padding: 0 40px;
+        margin: 1% 7% auto;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 780px) /* For ipads/tablets: */ {
+
+    #btn-small {
+        padding: 0 40px;
+        margin: 1% 7% auto;
+    }
+    
+
+
+}
 
 @media only screen and (max-width: 499px) /* For mobile phones: */{
 
-    #btn{
+    #btn-small{
         padding: 0 40px;
-        margin: 1% 2% 1%;
+        margin: 1% 2% 12%;
     }
 
 
