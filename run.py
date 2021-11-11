@@ -155,6 +155,10 @@ def get_categories():
 
 
 
+@app.route("/add_category", methods = ["GET", "POST"])
+def add_category():
+    return render_template("add_category.html")
+
 
 
 # This render's an html file with a click on the home button labelled accordingly
