@@ -3,9 +3,6 @@
 }
 
 
-.btn-small {
-    margin: 1px;
-}
 
 .collapsible-header .col strong {
     margin: 5px;
@@ -137,7 +134,7 @@ legend{
 
 @media only screen and (max-width: 980px) /* For ipads/tablets: */ {
 
-    #btn-small {
+    .btn-small {
         padding: 0 40px;
         margin: 1% 7% auto;
     }
@@ -148,7 +145,7 @@ legend{
 
 @media only screen and (max-width: 780px) /* For ipads/tablets: */ {
 
-    #btn-small {
+    #btn {
         padding: 0 40px;
         margin: 1% 7% auto;
     }
@@ -159,10 +156,11 @@ legend{
 
 @media only screen and (max-width: 499px) /* For mobile phones: */{
 
-    #btn-small{
-        padding: 0 40px;
-        margin: 1% 2% 12%;
+    #btn{
+        padding: 0 30px;
+        margin: auto 1.4% 4%;
     }
+
 
 
 
