@@ -105,19 +105,7 @@ nav{
 .foot-menu {
     text-align: center;
 }
-.foot-menu ul{
-    display: inline-block;
-    list-style: none;
-    color: black;
-}
-.foot-menu ul li {
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.foot-menu {
-    text-align: center;
-}
+
 .foot-menu ul{
     display: inline-flex;
     list-style: none;
@@ -128,6 +116,14 @@ nav{
     margin: 15px;
     padding: 15px;
 }
+/*The font awesome icon footer*/
+.fa-lg {
+    font-size: 1.666em;
+}
+a{
+    color: #232627;
+}
+
 legend{
     border: 20px;
 }
@@ -166,11 +162,18 @@ legend{
 
 
 
-@media only screen and (max-width: 370px) /* For even smaller gadgets/phones: */ {
+@media only screen and (max-width: 375px) /* For even smaller gadgets/phones: */ {
 
     #btn {
-        padding: 0 20px;
+        padding: 0 25px;
         margin: 1% 1% 2%;
+    }
+
+
+    .foot-menu ul li {
+        width: 120px;
+        padding: 15px;
+        margin-right: 7%;
     }
 
 
