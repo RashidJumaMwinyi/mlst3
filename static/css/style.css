@@ -27,9 +27,9 @@ header.masthead {
     background-attachment: scroll;}
 
 .subheading, h1{
-    color: white;
+    color: #f9f3f3e3;
     margin-left: 15%;
-
+    padding-bottom: 8%;
 }
 .subheading{
     font-size: 20px;
