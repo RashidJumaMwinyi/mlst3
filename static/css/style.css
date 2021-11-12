@@ -156,9 +156,25 @@ legend{
         padding: 0 30px;
         margin: auto 1% 2%;
     }
+
+    .foot-menu ul li {
+        width: 120px;
+        padding: 15px;
+        margin-right: 7%;
+        margin-left: 0;
+    }
+
+/*Buttons for editing and canceling the cusines/recipes*/
+    .btn-large {
+        height: 54px;
+        line-height: 54px;
+        font-size: 15px;
+        padding: 0 28px;
+        margin-bottom: 9px;
+    }
 }
 
-@media only screen and (max-width: 399px) /* For smaller gadgets/phones: */ {
+@media only screen and (max-width: 370px) /* For smaller gadgets/phones: */ {
 
     #btn {
         padding: 0 20px;
