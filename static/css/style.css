@@ -158,10 +158,10 @@ legend{
     }
 }
 
-@media only screen and (max-width: 399px) /* For smaller gadgets/phones: */ {
+@media only screen and (max-width: 300px) /* For smaller gadgets/phones: */ {
 
     #btn {
-        padding: 0 30px;
+        padding: 0 20px;
         margin: auto 1% 2%;
     }
 
