@@ -7,7 +7,7 @@ This game will demonstrate basic JavaScript functionality.
 
 A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 
-![website preview](static/img/screenshots/Am-I-Responsive.png)
+![website preview](static/img/screenshots/responsive.png)
 # Table of Contents
 
 -   [1. UX](#ux)
