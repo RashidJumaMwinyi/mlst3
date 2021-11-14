@@ -46,17 +46,18 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <textarea id="recipe_ingrdients" name="recipe_ingrdients" minlength="5"
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required>
                         {{- cusine.recipe_ingredients -}}
                     </textarea>
-                    <label for="recipe_ingrdients">Ingredients</label>
+                    
+                    <label for="recipe_preparation">Ingredients</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12 ">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_keyboard" type="number" class="validate" required>
+                    <input id="recipe_calories" type="number" name="recipe_calories" class="validate" required>
                     <label for="recipe_calories">Number of Calories</label>
                 </div>
             </div>
