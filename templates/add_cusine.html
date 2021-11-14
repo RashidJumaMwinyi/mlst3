@@ -15,34 +15,42 @@
                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endfor %}
                     </select>
-					<label for="category_name">Cusine Category</label>
+					<label for="category_name">Recipe Category</label>
 				</div>
 			</div>
             <!--Name of the cusine-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="task_name" name="task_name" minlength="5" maxlength="50"
+                    <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                         type="text" class="validate" required>
-                    <label for="task_name">Cusine Name</label>
+                    <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
-            <!--description of the cusine-->
+            <!--preparation of the cusine-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <textarea id="task_description" name="task_description" minlength="5"
+                    <textarea id="recipe_preparation" name="recipe_preparation" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="task_description">Cusine Description</label>
+                    <label for="recipe_preparation">Recipe Preparation</label>
                 </div>
             </div>
             <!--Ingredients section-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <textarea id="task_ingredients" name="task_ingredients" minlength="5"
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="task_ingredients">Cusine Ingrdients</label>
+                    <label for="recipe_ingredients">Recipe Ingrdients</label>
+                </div>
+            </div>
+            <!--Calories section-->
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <input id="recipe_calories" name="recipe_calories" type="number" class="validate" required>
+                    <label for="recipe_calories">Number of Calories</label>
                 </div>
             </div>
             <!--Submit button-->

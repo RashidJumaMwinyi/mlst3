@@ -109,9 +109,10 @@ def add_cusine():
     if request.method == "POST":
         cusines = {
             "category_name" : request.form.get("category_name"),
-            "task_name" : request.form.get("task_name"),
-            "task_description" : request.form.get("task_description"),
-            "task_ingredients" : request.form.get("task_ingredients"),
+            "recipe_name" : request.form.get("recipe_name"),
+            "recipe_preparation": request.form.get("recipe_preparation"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_calories": request.form.get ("recipe_calories"),
             "created_by" : session["user"]
         }
         mongo.db.cusines.insert_one(cusines)
@@ -128,9 +129,10 @@ def edit_cusine(cusine_id):
     if request.method == "POST":
         submit = {
             "category_name" : request.form.get("category_name"),
-            "task_name" : request.form.get("task_name"),
-            "task_description" : request.form.get("task_description"),
-            "task_ingredients" : request.form.get("task_ingredients"),
+            "recipe_name" : request.form.get("recipe_name"),
+            "recipe_preparation" : request.form.get("recipe_preparation"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_calories": request.form.get("recipe_calories"),
             "created_by" : session["user"]
         }
         mongo.db.cusines.update({"_id" : ObjectId(cusine_id)}, submit)

@@ -64,13 +64,14 @@ id="btn">Pasta</a>
                 {% endif %}
             </div>
             <div class="col s9">
-                <strong>{{ cusine.task_name }}</strong> 
+                <strong>{{ cusine.recipe_name }}</strong> 
             </div>
         </div>
         <div class="collapsible-body">
             <strong>{{ cusine.category_name }}</strong>
-            <p>{{ cusine.task_description }}</p>
-            <p>{{ cusine.task_ingredients }}</p>
+            <p>{{ cusine.recipe_preparation }}</p>
+            <p>{{ cusine.recipe_ingredients }}</p>
+            <p>{{ cusine.recipe_calories }}</p>
             <p><em>by: {{ cusine.created_by }}</em></p>
         </div>
     </li>
