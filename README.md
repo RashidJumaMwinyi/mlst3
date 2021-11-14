@@ -2,8 +2,8 @@
 
 ## Introduction
 
-Welcome to my second project. This project is a memory game that involves programming languages like HTML5, CSS3 and JavaScript.
-This game will demonstrate basic JavaScript functionality.
+Welcome to my third milestone project. This project is a recipe web and mobile app that involves programming languages such as HTML5, CSS3, JavaScript and Python.
+This app will demonstrate how all the above languages are used to showcase their excellence in delivering good product to the user from backend to frontend.
 
 A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 
@@ -35,7 +35,8 @@ A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 
 [Go to the top](#table-of-contents)
 
-Just by the titlie of the game it tells a player that the game is mind tricking so they should get their mind ready for some mind image capturing since the game involves memorizing the first card and trying to flip random card to find the matching one.
+We all have that one part of ourselves that is drawned in food specialities even though not all of us are foodies but deep down us food motivates us in all kinds of ways.
+The app has simple and navigable features to all users and non users.
 
 <a name="strategy"></a>
 
@@ -45,22 +46,26 @@ Just by the titlie of the game it tells a player that the game is mind tricking 
 
 ### Project Goals
 
-The goal of this game is to create an entertaining and challenging game that is interactive and yet productive to the user in a sense of mind training by training the mind to get used to capture and memorize an image in a short time and also to showcase the basic use of JavaScript functions.
-The objective is to get our players to be engaged with the game.
+The goal of this app is to not just target those in need of the recipes to make their quick dinner but it allows users to share their own personal dishes with others.
+The app gives a registered user full potetial to create,update and delete the recipe whenever they please with less complications.
+The app acts as storage of personal recipes or sharing to the users.
 
 ### User Goals:
 
 First Time Visitor Goals
--   As a first-time visitor, I want to be engaged with the concept of the game.
--   As a first-time visitor, I want to be able to easily understand the rules of the game.
--   As a first-time visitor, I want to play the game to win.
+-   As a first-time visitor, I want to be engaged with the concept of the app.
+-   As a first-time visitor, I want to be able to easily understand what the app is about.
+-   As a first-time visitor, I want to see what others have shared.
+-    As a first-time visitor, I want to have less complication on registering.
 
 Returning Visitor Goals
--   As a Returning Visitor, I want to win the hard level as many times as I can.
--   As a Returning Visitor, I want to find the best way to get in contact with the organization with any questions I may have.
+-   As a Returning Visitor, I want toedit and delete the data I created.
+-   As a Returning Visitor, I want to share more recipes with other users.
+-    As a Returning Visitor, I want to update my archived date/recipes
 
 Frequent User Goals
--   As a Frequent User, I want to check to see if there are any newly updates on the cards or level upgrades.
+-   As a Frequent User, I want to check to see if there are any newly updates on the categories.
+-   As a Frequent User, I want to check if more recipes are added or updated by users.
 
 ### User Expectations:
 
