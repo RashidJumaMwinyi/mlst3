@@ -39,10 +39,10 @@ id="btn">Pasta</a>
                 {% if session.user|lower == cusine.created_by|lower %}
 
                  <!-- Modal Trigger for delete confirmation-->
-                <a class="waves-effect waves-light btn modal-trigger red lighten" href="#delete-cusine">Delete</a>
+                <a class="waves-effect waves-light btn modal-trigger red lighten" href="#delete-{{loop.index0}}">Delete</a>
 
                 <!-- Modal Structure -->
-                <div id="delete-cusine" class="modal">
+                <div id="delete-{{loop.index0}}" class="modal">
                     <div class="modal-content">
                         <p>
                             This action can not be un done...<br>

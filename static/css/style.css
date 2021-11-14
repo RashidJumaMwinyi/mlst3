@@ -106,6 +106,12 @@ nav{
     text-align: center;
 }
 
+/*the delete and cancel confirmation buttons*/
+.modal .modal-footer .btn-small {
+    margin: 6px;
+}
+
+
 .foot-menu ul{
     display: inline-flex;
     list-style: none;
@@ -145,6 +151,11 @@ legend{
         padding: 0 30px;
         margin: auto 8% 1%;
     }
+    #erase{
+        margin: 4%;
+    }
+
+    
     
 
 
