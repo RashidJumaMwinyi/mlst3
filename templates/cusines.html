@@ -68,10 +68,26 @@ id="btn">Pasta</a>
             </div>
         </div>
         <div class="collapsible-body">
-            <strong>{{ cusine.category_name }}</strong>
-            <p>{{ cusine.recipe_preparation }}</p>
-            <p>{{ cusine.recipe_ingredients }}</p>
-            <p>{{ cusine.recipe_calories }}</p>
+            <strong>
+                <h6><em>Category:</em> </h6>
+                {{ cusine.category_name }}
+            </strong>
+
+            
+            <p>
+                <h6><em>Preparation:</em> </h6>
+                {{ cusine.recipe_preparation }}
+            </p>
+            
+           
+            <p>
+                <h6><em>Ingredients:</em> </h6>
+                {{ cusine.recipe_ingredients }}
+            </p>
+            <p>
+                <h6><em>Calories:</em> </h6>
+                {{ cusine.recipe_calories }}
+            </p>
             <p><em>by: {{ cusine.created_by }}</em></p>
         </div>
     </li>
