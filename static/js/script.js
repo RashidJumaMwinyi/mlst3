@@ -8,6 +8,7 @@ $(document).ready(function () {
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
     $("select").formSelect();
+    $('.modal').modal();
 });
 
 
@@ -59,7 +60,6 @@ function validateMaterializeSelect() {
 function openBtn() {
     document.getElementById("pasta").style.display = "block";
 }
-
 
 
 

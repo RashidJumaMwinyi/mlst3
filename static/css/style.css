@@ -116,6 +116,17 @@ nav{
     margin: 15px;
     padding: 15px;
 }
+
+
+/*Modal content for delete confirmation*/
+.modal .modal-content {
+    padding: 24px;
+    padding: 20px;
+    margin: 6% 20%;
+    color: #131212;
+    text-shadow: none;
+    font-size: larger;
+    }
 /*The font awesome icon footer*/
 .fa-lg {
     font-size: 1.666em;
@@ -155,6 +166,16 @@ legend{
     #btn {
         padding: 0 30px;
         margin: auto 1% 2%;
+    }
+
+    /*Modal content for delete confirmation*/
+    .modal .modal-content {
+        padding: 24px;
+        padding: 20px;
+        margin: 6% 20%;
+        color: #131212;
+        text-shadow: none;
+        font-size: medium;
     }
 
     .foot-menu ul li {
