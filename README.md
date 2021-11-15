@@ -16,7 +16,6 @@ A live website can be found [here](https://flask-cusine3.herokuapp.com/).
             -   [User Goals:](#user-goals)
             -   [User Expectations:](#user-expectations)
             -   [Trends of Modern Websites](#trends-of-modern-websites)
-            -   [Strategy Table](#strategy-table)
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
     -   [1.4. Surface](#surface)
@@ -61,7 +60,7 @@ First Time Visitor Goals
 Returning Visitor Goals
 -   As a Returning Visitor, I want toedit and delete the data I created.
 -   As a Returning Visitor, I want to share more recipes with other users.
--    As a Returning Visitor, I want to update my archived date/recipes
+-    As a Returning Visitor, I want to update my archived data/recipes
 
 Frequent User Goals
 -   As a Frequent User, I want to check to see if there are any newly updates on the categories.
@@ -69,50 +68,39 @@ Frequent User Goals
 
 ### User Expectations:
 
-The game should be engaging and display a winner or loose feedback to the player.
+The app should be secure on the eyes of the user displaying their own login profile and allowing added content to be named afer the creator/user.
 
--   The game difficulty selection is clear.
+-   The app about content is briefly explained clear.
 -   The user interface is easy to navigate.
--   The game is responsive on all devices including mobile, tablet and desktop.
--   To have the ability to contact the creator of the game.
+-   The app is responsive on all devices including mobile, tablet and desktop.
+-   To have the ability to create, update and delete the contents loaded accordingly.
 
-### Trends of modern games:
+### Trends of modern app:
 
--   Mobile gaming (gaming on the go)
--   Nostalgia gaming with remastered games
+-   Mobile app (usage on the go)
+-   Visuals that are easy on the eyes
 
-### Strategy Table
-
-| Opportunity/Problem/Feature              | Importance | Viability/Feasibility |
-| ---------------------------------------- | ---------- | --------------------- |
-| Engaging game play                       | 5          | 5                     |
-| Time tracking system                     | 5          | 5                     |
-| The ability to chose the levels prefered | 5          | 5                     |
-| Responsive design                        | 5          | 4                     |
-| Contact/Open form                        | 4          | 5                     |
-| Rules popup modal                        | 5          | 5                     |
-| Caption for the loose div                | 5          | 5                     |
-| Caption for the winning div              | 2          | 1                     |
-| Total                                    | 36         | 35                    |
 
 ## Scope
 
-As I labelled a couple of features from the strategy table. I will phase this project in multiple phases. Phase 1 will be what I have identified as a minimum viable product. Please find below the plans I have for each phase.
+ I will phase this project in multiple phases. Phase 1 will be what I have identified as a minimum viable product. Please find below the plans I have for each phase.
 
 ### Phase 1
 
--   Engaging game play
--   The time track countdown
--   The ability to pick the game level
+-   Engaging the app contents
+-   Register form for new users
+-   login form for registered users
+-   The ability to add the recipe
+-   The ability to edit delete and update a recipe
+-   The ability to edit delete and update a category
 -   Responsive design
--   Contact form
--   Instruction's popup modal
--   The card matching
+-   Confirm delete popup modal for both cusine and category
+-   Display the created cusine on the landing page
 
 ### Phase 2
 
--   Caption for the win game with a pop up div congratulating a player for the good effort they have made to win.
--   Caption for the loose game with a pop up div extending my misery to the player for the loose despite their hard work on trying to win.
+-   A register form for new users to have a access to the app's features.
+-   A login form for the registered users.
 
 
 <a name="structure"></a>
@@ -136,7 +124,7 @@ It is really important to include responsive design in this project as many user
 
 I used [Balsamiq](https://balsamiq.com/) to create my wireframes as this gives the template of the UI. This also shows where all elements will be placed within the screen.
 
-There are 3 versions of the overall design of the project with the wireframe as the first one shows the design on a web browser wehn all the main three home page buttons are clicked and this responds to all screen displays, second one shows the game on runtime after the user as cliked a "Start Gmae" button and has chosen the game level. The thired one other shows a mobile browser format but displaying how the home page reviews when neither of the three buttons are clicked. Both have a commenton a yellow note explaining the previews present.
+There are 7 versions of the overall design of the project with the wireframe as the first one shows the design on both web and mobile browser with a landing page displaying the navbar the recipes/cusines created by registered users while the buttons redirects a user to the sample of the cusines created by the admin in the main three dish categories, this responds to all screen displays, second one shows the register form that displays when the user wants to register.The third one shows the profile of the login in user.The fourth one shows the add cusine content where the user attempts to create their new cusine. The fifth one shows the edit/update form with the data to be edited by the user. The fith one shows the added categories by user/manage categories page, sixth shows the add new category content for the admin of the app. 
 
 ### Wire-frames
 
