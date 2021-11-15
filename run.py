@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/")
 
 
-
+#Loads all the created cusines by users on the home page
 @app.route("/get_cusine")
 def get_cusine():
     cusines = mongo.db.cusines.find()
@@ -57,6 +57,7 @@ def register():
     return render_template("register.html")
 
 
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -87,12 +88,14 @@ def login():
     return render_template("login.html")
 
 
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
     username = mongo.db.user.find_one(
         {"username": session["user"]})["username"]
     return render_template("profile.html", username=username)
+
 
 
 @app.route("/logout")
@@ -195,7 +198,7 @@ def delete_category(category_id):
 
 
 
-# This render's an html file with a click on the home button labelled accordingly
+# The following functions loads data from the json imported on the top to render sample html
 @app.route("/pasta")
 def pasta():
     with open("data/cusine.json", "r") as json_data:
@@ -223,4 +226,4 @@ def dessert():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
