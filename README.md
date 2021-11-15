@@ -145,7 +145,7 @@ Mobile index page:
 
 ### Colours
 
-Please find the colours schemes that I used [here](https://coolors.co/f0ffff-0085c7-df0024-f4c300-009f3d).
+The colors for the buttons and scroll down menu are generated from [here](https://materializecss.com/navbar.html).
 
 ### Typography
 
@@ -159,27 +159,42 @@ I decided to use Roboto as my font of choice with sans serif as my backup font f
 
 ### All Pages
 
--   Clickable buttons are placed at the vertically from top top to mid-center of the page.
--   Image background - to give more of a user experience instead of a plain background.
+-   Clickable buttons are placed at the vertically from top to mid-center of the page.
+-   Header background image is an image to represent the app as a recipe app to the first time
+users before they read details about the app.
+-   plain background - to give more of a user experience by offering more focus to the features on the app.
 
 ### Landing Page
 
--   Instructions button - This button opens up a popup modal. This modal gives conclusive instructions to the game. There is a clickable information that reveals what the user expects to know before playing the game.
+-   Home page header image that explains to a user that the app is about food.
+-   Navigation bar/menu contains the clickable elements which are linked to the targeted contents for the user.
+-   The three buttons beneath the header are clickabled buttons that redirects user to the sample of the recipes/cusnes created by the admin of the app, it is just a demonstration to give users a clear idea that the app is about creating cusines and recipes.
+-   The about content is a little introductory part of the app for the new users which explains in words what they should expect and do if they would be interested in the app.
+-   The dropdown menu beneath the about content is all the cusines created by the registered users, cusines contain edit and delete button vissible to only the user being logedin which allows the user to update or delete the cusine chossen.
 
--   Start game button - This button will allow the user to navigate to the game levels and eventually pick a level of their choice.
+-   Footer - The footer is placed at the bottom of this page. This contains all social media links that open up in a new tab.
 
--   Open form button - This button opens up a popup modal. In this modal, the user can fill out a feedback form to contact the owner of the website/game.
+### register Page
 
--   Footer - The footer is placed at the bottom of this page. This contains all social media links that open up in a new tab. When hovering over each icon, the icon chnages color to green.
+-   Contains a form to be inserted data of the user to be submitted and verified as a regular user.
 
-### Game Page
+### login Page
 
--   Timer count down shows the user/player how many seconds left before the game ends.
--   Home page button - This button will take the user back to the index page.
+-   Contains a form to be inserted data of the user to be login as a regular user.
 
--   Winning GIF/image - If the user has won, the game ends with a winner's GIF/image. At this point, this blurrs the background of the pop up div and left with a new game button. This allows the user select another game level.
+### register Page
 
--   Losing GIF - If the computer has beaten the user to 3 rounds, the game ends with a loser's GIF. At this point, this removes all the weapon icons and results and left with a new game button, scoreboard and main menu button. This forces the user to restart the game.
+-   Contains content verifying the user having a profile as a registered user of the app.
+
+### Add Recipe Page
+-   Contains a form with data that has labeled inputs to be filled by the user optionally.
+-   The add cusine button at the bottom that confirms the entered data by the user being valid data.
+
+### Manage categories Page
+-   Can only be accessed by the admin of the app and it has the added categories and the button option for adding a new category.
+-   Categories contain edit and delete button vissible to only the admin being logedin which allows the admin to update or delete the category chossen.
+
+-   Delete confirmation modal is triggered both when user and admin decide to delete an item giving them a chance to either cancel or confirm deletion.
 
 <a name="technologies-used"></a>
 
@@ -203,8 +218,7 @@ I decided to use Roboto as my font of choice with sans serif as my backup font f
     -   Google fonts were used to import the "Benne" font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
--   [JS Fiddle](https://jsfiddle.net/)
-    -   JS Fiddle was used as a playground to test all my code before committing.
+
 
 <a name="testing"></a>
 
@@ -212,9 +226,6 @@ I decided to use Roboto as my font of choice with sans serif as my backup font f
 
 [Go to the top](#table-of-contents)
 
-For every element that I added to my HTML, I would add the basic CSS to my stylesheet. I would then use the inspect element to try different styles. Once I've got it to my liking I would copy the CSS from google into my stylesheet. This allows me to keep track of the code I am using.
-
-I also added basic functions for my JavaScript that were empty so i could map out the logic of the game.
 
 ### Google Developer Tools
 
@@ -229,7 +240,7 @@ I used [Am I Responsive](http://ami.responsivedesign.is/) to make sure that all 
 ### W3C Validator Tools
 
 I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within my HTML pages.
-I had no errors in the index and start_game page.
+I had no errors in the index and othe pages.
 
 ![index HTML validator]
 ![start_game HTML validator]
@@ -260,7 +271,7 @@ Please find below my testing process for all pages via mobile and web:
 
 ### All Pages
 
--   Image background - I tested this on Chrome and firefox on all devices.
+-   Header Image background - I tested this on Chrome and firefox on all devices.
 
     -   Text:
 
