@@ -25,8 +25,10 @@ mongo = PyMongo(app)
 #Loads all the created cusines by users on the home page
 @app.route("/get_cusine")
 def get_cusine():
-    cusines = mongo.db.cusines.find()
-    return render_template("cusines.html", cusines=cusines)
+    with open("data/cusine.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("cusines.html", cusine=data)
+
 
 
 
@@ -94,7 +96,8 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.user.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    cusines = mongo.db.cusines.find()    
+    return render_template("profile.html", username=username, cusines=cusines)
 
 
 
@@ -212,15 +215,6 @@ def beef():
     with open("data/cusine.json", "r") as json_data:
         data = json.load(json_data)
     return render_template("beef.html",page_title="beef",cusine=data)
-
-
-# This render's an html file with a click on the home button labelled accordingly
-@app.route("/dessert")
-def dessert():
-    with open("data/cusine.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("dessert.html",page_title="dessert",cusine=data)
-
 
 
 if __name__ == "__main__":

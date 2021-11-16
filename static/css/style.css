@@ -2,16 +2,19 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/*This is the horizontal line after the about content*/
+.divider {
+    height: 2px;
+    overflow: hidden;
+    background-color: #161515;
+}
 
 
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
 }
-#btn{
-    padding: 0 40px;
-    margin: auto 1% auto 15%;
-}
+
 header.masthead {
     position: relative;
     margin-bottom: 3rem;
@@ -67,11 +70,6 @@ nav{
 }
 
 
-.col-md-4 img{
-    width: 100%;
-    border-radius: 16px;
-    padding: 8px;
-}
 .col-md-5 img{
     width: 100%;
     border-radius: 16px;
@@ -84,16 +82,12 @@ nav{
 
 .view-button{
     float: right;
-    text-decoration: none;
     text-align: center;
     width: 120px;
-    padding: 10px 0;
-    background-color: #404041;
-    color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 10px;
     align-self: flex-start;
-    border-radius: 6px;
+
 }
 .item-data{
     display: block;

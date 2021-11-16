@@ -1,73 +1,26 @@
-{
-  "beef": [
-    {
-      "name": "Roasted",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/food.jpg"
-    },
-    {
-      "name": "Steak",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/steak.jpg"
-    },
-    {
-      "name": "Beef",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/food-3.jpg"
-    },
-    {
-      "name": "Goulash",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/goulash.jpg"
-    }
-  ],
-  "dessert": [
-    {
-      "name": "Cupcakes",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/cupcakes.jpg"
-    },
-    {
-      "name": "Chocolate",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/cioccolate.jpg"
-    },
-    {
-      "name": "Strawberry Cake",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/strawbrry.jpg"
-    }
-  ],
-  "pasta": [
-    {
-      "name": "Pasta al Pomo",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/spaghetti-pomo.jpg"
-    },
-    {
-      "name": "Lasagna",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/lasagna.jpg"
-    },
-    {
-      "name": "Pasta",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/pasta_.jpg"
-    },
-    {
-      "name": "Pasta al Pesto",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/pasta_pesto.jpg"
-    },
-    {
-      "name": "Pasta",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/pasta.jpg"
-    },
-    {
-      "name": "Pasta",
-      "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
-      "image_source": "static/img/pasta-g.jpg"
-    }
-  ]
-}
+[
+  {
+    "name": "Steak",
+    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "image_source": "static/img/steak.jpg",
+    "calories": 320
+  },
+  {
+    "name": "Pasta al Pomo",
+    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "image_source": "static/img/spaghetti-pomo.jpg",
+    "calories": 260
+  },
+  {
+    "name": "Chocolate",
+    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "image_source": "static/img/cioccolate.jpg",
+    "calories": 121
+  },
+  {
+    "name": "Strawberry Cake",
+    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "image_source": "static/img/strawbrry.jpg",
+    "calories": 210
+  }
+]
