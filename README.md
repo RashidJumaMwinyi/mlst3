@@ -3,7 +3,7 @@
 ## Introduction
 
 Welcome to my third milestone project. This project is a recipe web and mobile app that involves programming languages such as HTML5, CSS3, JavaScript and Python.
-This app will demonstrate how all the above languages are used to showcase their excellence in delivering good product to the user from backend to frontend.
+This app is called "WALLET RECIPE" and is suppose to demonstrate how all the above languages are used to showcase their excellence in delivering good product to the user from backend to frontend.
 
 A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 
@@ -124,18 +124,30 @@ It is really important to include responsive design in this project as many user
 
 I used [Balsamiq](https://balsamiq.com/) to create my wireframes as this gives the template of the UI. This also shows where all elements will be placed within the screen.
 
-There are 7 versions of the overall design of the project with the wireframe as the first one shows the design on both web and mobile browser with a landing page displaying the navbar the recipes/cusines created by registered users while the buttons redirects a user to the sample of the cusines created by the admin in the main three dish categories, this responds to all screen displays, second one shows the register form that displays when the user wants to register.The third one shows the profile of the login in user.The fourth one shows the add cusine content where the user attempts to create their new cusine. The fifth one shows the edit/update form with the data to be edited by the user. The fith one shows the added categories by user/manage categories page, sixth shows the add new category content for the admin of the app. 
+There are 7 versions of the overall design of the project with the wireframe as the first one shows the design on both web and mobile browser with a landing page displaying the navbar the recipes/cusines created by created by the admin in the main three dish categories, this responds to all screen displays, second one shows the register form that displays when the user wants to register.The third one shows the profile of the login in user that displays the user created recipes/cusine from all the active users except a user access to their own cusines in terms of editing and updating them or deleting.The fourth one shows the add cusine content where the user attempts to create their new cusine. The fifth one are clickable elements/buttons found on the ready made cusines by the user and when clicked it redirects the user to what it is labeled to do. The fith one shows the added categories by user "manage categories" page, sixth shows the add new category content for the admin of the app. 
 
 ### Wire-frames
 
-Web browser index page (When the home page buttons are cliked):
+Web browser cusines page (When the home page is accessed by both mobile and larg device):
 [![index_web](assets/wireframes/buttons-clicked.png)
 
-Web browser index page (When the "Start Game"button as been clicked and the game is on run time):
+Web browser  page (When the register page is accessed both in small and large display):
 [![index_web](assets/wireframes/game-is-played.png)
 
-Mobile index page:
+Web browser page(When the user is registered and loged in, both in small and large display):
 [![index_mobile](assets/wireframes/no-buttons-clicked.png)
+
+Web browser page(When the add recipe page is accessed in, both in small and large display):
+[![index_mobile](assets/wireframes/no-buttons-clicked.png)
+
+
+Web browser page(When the profile page is accessed in both small and large display):
+[![index_mobile](assets/wireframes/no-buttons-clicked.png)
+
+
+Web browser page(When the Admin is loged in, in both small and large display):
+[![index_mobile](assets/wireframes/no-buttons-clicked.png)
+
 
 <a name="surface"></a>
 
@@ -159,18 +171,18 @@ I decided to use Roboto as my font of choice with sans serif as my backup font f
 
 ### All Pages
 
--   Clickable buttons are placed at the vertically from top to mid-center of the page.
+-   The navbar is placed at the top of the page.
 -   Header background image is an image to represent the app as a recipe app to the first time
 users before they read details about the app.
 -   plain background - to give more of a user experience by offering more focus to the features on the app.
+-   A few number of jumbled recipes on the home page to showcase the app is about, created by the admin.
 
 ### Landing Page
 
 -   Home page header image that explains to a user that the app is about food.
 -   Navigation bar/menu contains the clickable elements which are linked to the targeted contents for the user.
--   The three buttons beneath the header are clickabled buttons that redirects user to the sample of the recipes/cusnes created by the admin of the app, it is just a demonstration to give users a clear idea that the app is about creating cusines and recipes.
 -   The about content is a little introductory part of the app for the new users which explains in words what they should expect and do if they would be interested in the app.
--   The dropdown menu beneath the about content is all the cusines created by the registered users, cusines contain edit and delete button vissible to only the user being logedin which allows the user to update or delete the cusine chossen.
+-   The cusines/recipes below the "About" content are to showcase the first time user what the app is about in practicality.
 
 -   Footer - The footer is placed at the bottom of this page. This contains all social media links that open up in a new tab.
 
@@ -182,9 +194,9 @@ users before they read details about the app.
 
 -   Contains a form to be inserted data of the user to be login as a regular user.
 
-### register Page
+### Profile Page
 
--   Contains content verifying the user having a profile as a registered user of the app.
+-   Contains the cusines created by other users that can be viewed by registered users but only the creater can edit and delete them.
 
 ### Add Recipe Page
 -   Contains a form with data that has labeled inputs to be filled by the user optionally.
@@ -205,19 +217,29 @@ users before they read details about the app.
 -   [HTML5](https://en.wikipedia.org/wiki/HTML)
     -   The project uses HyperText Markup Language.
 -   [CSS3](https://en.wikipedia.org/wiki/CSS)
+-   [MaterializeCSS](https://en.wikipedia.org/wiki/MaterializeCSS)
+    -   The project uses MaterializeCSS.
     -   The project uses Cascading Style Sheets.
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
     -   The project uses JavaScript.
+-    [JQuery](https://en.wikipedia.org/wiki/JQuery)
+    -   The project uses JQuery.
+-   [Python](https://en.wikipedia.org/wiki/Python)
+    -   The project uses Python to render templates and load the data from the database and the json file. 
+-    [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
+    -   The project uses MongoDB to store, retrieve data for the user.
+-    [Flask](https://en.wikipedia.org/wiki/Flask)
+    -   The project uses Flask.   
 -   [Visual Studio Code](https://code.visualstudio.com/)
     -   The project uses Visual Studio Code.
 -   [Chrome](https://www.google.com/intl/en_uk/chrome/)
     -   The project uses Chrome to debug and test the source code using HTML5.
 -   [Balsamiq](https://balsamiq.com/)
     -   Balsamiq was used to create the wireframes during the design process.
--   [Google Fonts](https://fonts.google.com/)
-    -   Google fonts were used to import the "Benne" font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
+-   [Heroku](https://heroku.com/)
+    -   heroku was used to launch the project / app.
 
 
 <a name="testing"></a>
