@@ -34,7 +34,7 @@
                     </div>
                     <div class="modal-footer">
                         <!-- cancel button -->
-                    <a href="{{ url_for('get_cusine') }}" class="btn-small light-blue darken-4 text-shadow">
+                    <a href="{{ url_for('profile', username=session['user']) }}" class="btn-small light-blue darken-4 text-shadow">
                         Cancel 
                     </a>
 

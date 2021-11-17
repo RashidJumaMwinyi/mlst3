@@ -96,7 +96,8 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.user.find_one(
         {"username": session["user"]})["username"]
-    cusines = mongo.db.cusines.find()    
+    # This loads recipe to the users profile
+    cusines = mongo.db.cusines.find()   
     return render_template("profile.html", username=username, cusines=cusines)
 
 
