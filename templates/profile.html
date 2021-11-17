@@ -52,26 +52,26 @@
         </div>
         <div class="collapsible-body">
             <strong>
-                <h6><em>Category:</em> </h6>
+                <h6><b>Category:</b> </h6>
                 {{ cusine.category_name }}
             </strong>
 
             
             <p>
-                <h6><em>Preparation:</em> </h6>
+                <h6><b>Preparation:</b> </h6>
                 {{ cusine.recipe_preparation }}
             </p>
             
            
             <p>
-                <h6><em>Ingredients:</em> </h6>
+                <h6><b>Ingredients:</b> </h6>
                 {{ cusine.recipe_ingredients }}
             </p>
             <p>
-                <h6><em>Calories:</em> </h6>
+                <h6><b>Calories:</b> </h6>
                 {{ cusine.recipe_calories }}
             </p>
-            <p><em>by: {{ cusine.created_by }}</em></p>
+            <p><b>by: {{ cusine.created_by }}</b></p>
         </div>
     </li>
     {% endfor %}
