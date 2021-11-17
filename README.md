@@ -124,7 +124,7 @@ It is really important to include responsive design in this project as many user
 
 I used [Balsamiq](https://balsamiq.com/) to create my wireframes as this gives the template of the UI. This also shows where all elements will be placed within the screen.
 
-There are 7 versions of the overall design of the project with the wireframe as the first one shows the design on both web and mobile browser with a landing page displaying the navbar the recipes/cusines created by created by the admin in the main three dish categories, this responds to all screen displays, second one shows the register form that displays when the user wants to register.The third one shows the profile of the login in user that displays the user created recipes/cusine from all the active users except a user access to their own cusines in terms of editing and updating them or deleting.The fourth one shows the add cusine content where the user attempts to create their new cusine. The fifth one are clickable elements/buttons found on the ready made cusines by the user and when clicked it redirects the user to what it is labeled to do. The fith one shows the added categories by user "manage categories" page, sixth shows the add new category content for the admin of the app. 
+There are versions of the overall design of the project with the wireframe as the first one shows the design on both web and mobile browser with a landing page displaying the navbar the recipes/cusines created by created by the admin in the main three dish categories, this responds to all screen displays, second one shows the register form that displays when the user wants to register.The third one shows the profile of the login in user that displays the user created recipes/cusine from all the active users except a user access to their own cusines in terms of editing and updating them or deleting.The fourth one shows the add cusine content where the user attempts to create their new cusine. The fifth one are clickable elements/buttons found on the ready made cusines by the user and when clicked it redirects the user to what it is labeled to do. The fith one shows the added categories by user "manage categories" page, sixth shows the add new category content for the admin of the app. 
 
 ### Wire-frames
 
@@ -308,34 +308,41 @@ Please find below my testing process for all pages via mobile and web:
 
 ### Landing Page
 
--   Game Menu Buttons
+-   Navigation menu bar - functions as expected.
 
-    -   Introduction button - When selecting the "introduction" button, a popup modal appears with a short summary of the game with an embedded video. This worked as expected.
-    -   Start game button - When selecting the "start game" button, the browser shows the pop up options for the game the once the level is selected
-        the the browser redirects to the game page. This worked as expected.
-    -   Open fomr button - when selecting the "open form" button, a popup modal appears with a feedback form. This worked as expected.
-
+    -   The created cusines by admin to show off the cusin example. This worked as expected.
+    
 -   Footer
 
     -   Facebook - When selecting the Facebook icon, a new tab opens and redirects to the Facebook website. It worked as expected.
     -   YouTube - When selecting the YouTube icon, a new tab opens and redirects to the YouTube website. It worked as expected.
     -   Instagram - When selecting the Instagram icon, a new tab opens and redirects to the Instagram website. It worked as expected.
 
-### Game Page
+### Register Page
 
--   Instructions - I made sure the instruction's click button was functioning and showing the right out put.
+-   The form response properly, all the input fields react as expected and user is able to submit their data and get verified as expected.
 
--   Open form- I checked that the feedback form was displaying with expected elements.
 
--   Select game difficulty - I checked that the all previewed button options redirects a player to a chosen game level.
+### Login Page
+-   The form response properly, all the input fields react as expected and user is able to submit their data and get loged in their profile as expected
 
--   Timer-countdown - I checked that the seconds on every game level was decreamenting correctly as I set them.
 
--   Home Page button - When selecting the "home page" button after a win, the browser redirects a player to the index page.
+### Profile Page
+-   The page loads the contents that was expected to run and displays the user's loged in name.
+-   The buttons to edit and delete cusines response respectively.
+-   The delete button triggers a pop up modal for delete confirmation as expected.
+-   The edit cusine form responds as programmed hence the page responded as expected
 
--   Winning GIF - I checked that the winning GIF is displaying correcting on all devices, ensuring that the GIF is responsive.
 
--   Losing GIF - I checked that the losing GIF is displaying correcting on all devices, ensuring that the GIF is responsive.
+### Add Recipe Page
+-   The form for collecting data response respectively.
+-   The submit recipe button funtions as well and all worked as expected
+
+
+### Manage Category Page
+-   The page loads as expected and displays the content expected.
+-   Each category has an edit and delete function where they both respond as expected.
+-  The add category button responded as expected hence the page responded respectively. 
 
 <a name="development-cycle"></a>
 
@@ -347,15 +354,19 @@ There were some elements I changed, re-positioned and added from my original wir
 
 ### Landing Page
 
--   The first idea was changed since it needed more time and it had more elements which I imagined it could have brought some confusion and boredom to the users.
--   The current landing page has three visible and clickable buttons which allows the pop up divs connected to them to show.
--   The pop up divs are detailed in a way that a user will get entertained by going through them since they are just click to reveal kind of elements.
+-   The first idea was changed to simply convey a brief and clear image to a first user who visits the app inorder.
+-   The current landing page has the "About" content which briefs the user about the app, the four recipes added by the admin to trap the users attention.
 
-### Start Game Bytton
 
--   On the start game button when the user clicks it, it displays a pop up div offering the player game levels which are:Easy,Medium and Hard.
--   Once the player chooses a level to play,the levels vary with amount of seconds and once the time runs out the page automatically reloads to the home page.
--   And when the player wins a level, a pop up div shows out with a fire works image got from giphy along with sentece to congratulate the player,with a button that says home page offering a player a chance to click it to return to the buttons on the home page.
+
+### The profile page
+-   The page has the users created recipes and loads other users recipes too, this is intended to motivate the user to create a recipe by looking at what the other users have created.
+
+
+### The register page
+-   The page has a brief form which convinces the user their data safety without asking email or pone number for profile verification.
+
+
 <a name="deployment"></a>
 
 # 6. Deployment
