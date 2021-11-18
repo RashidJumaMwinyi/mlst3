@@ -7,7 +7,7 @@ This app is called "WALLET RECIPE" and is suppose to demonstrate how all the abo
 
 A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 
-![website preview](static/img/screenshots/responsive.png)
+![website preview](static/img/screenshots/iamesponsive.png)
 # Table of Contents
 
 -   [1. UX](#ux)
