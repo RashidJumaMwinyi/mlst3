@@ -131,13 +131,13 @@ There are versions of the overall design of the project with the wireframe as th
 Web browser cusines page (When the home page is accessed by both mobile and larg device):
 [![index_web](static/img/wireframes/homeandmob_app.png)
 
-Web browser  page (When the register page is accessed both in small and large display):
+Web browser  page (When the register page is accessed):
 [![index_web](static/img/wireframes/register_app.png)
 
-Web browser page(When the user is registered and loged in, both in small and large display):
+Web browser page(When the user is registered and loged in):
 [![index_mobile](static/img/wireframes/profile_app.png)
 
-Web browser page(When the add recipe page is accessed in, both in small and large display):
+Web browser page(When the add recipe page is accessed in):
 [![index_mobile](static/img/wireframes/add_recipe_app.png)
 
 
@@ -145,7 +145,7 @@ Web browser page(When the navbar is accessed in small display):
 [![index_mobile](static/img/wireframes/navbarmob_app.png)
 
 
-Web browser page(When the Admin is loged in and accessing the manage category page, in both small and large display):
+Web browser page(When the Admin is loged in and accessing the manage category page):
 [![index_mobile](static/img/wireframes/admin_app.png)
 
 
