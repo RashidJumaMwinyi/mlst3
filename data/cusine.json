@@ -1,12 +1,12 @@
 [
   {
-    "name": "Steak",
+    "name": "Tagliata",
     "description": "Meat can be cooked in many ways depending on cultures, personal taste, the dish you want to prepare and each time it is a different gastronomic experience. Certainly, one of the tastiest recipes to enjoy pure meat is the cut of beef. To prepare it artfully, it is good to choose the right cut, cook it not from cold and pay close attention to the timing to obtain a soft, juicy and perfectly pink inside meat. The sliced beef with rocket will be perfect to serve for a dinner with friends or on all occasions when your guests want to savor a succulent and substantial second course.",
     "image_source": "static/img/steak.jpg",
     "calories": 320
   },
   {
-    "name": "Pasta al Pomo",
+    "name": "Pasta al Pesto",
     "description": "Do you want a fresh and light dish for your lunch? Then spaghetti with pesto is a classic recipe! Pesto, the cornerstone of Ligurian cuisine, is a very versatile and always very popular sauce on the table, which can be used to make excellent first courses, and make pasta dishes rich and with unmistakable taste. Pesto is made with basil leaves, creating a creamy dressing that enhances the good flavors and colors of Mediterranean cuisine!",
     "image_source": "static/img/spaghetti-pomo.jpg",
     "calories": 260
