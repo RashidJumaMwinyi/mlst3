@@ -135,10 +135,10 @@ Web browser  page (When the register page is accessed):
 [![index_web](static/img/wireframes/register_app.png)
 
 Web browser page(When the user is registered and loged in):
-[![index_mobile](static/img/wireframes/profile_app.png)
+[![index_web](static/img/wireframes/profile_app.png)
 
 Web browser page(When the add recipe page is accessed in):
-[![index_mobile](static/img/wireframes/add_recipe_app.png)
+[![index_web](static/img/wireframes/add_recipe_app.png)
 
 
 Web browser page(When the navbar is accessed in small display):
@@ -146,7 +146,7 @@ Web browser page(When the navbar is accessed in small display):
 
 
 Web browser page(When the Admin is loged in and accessing the manage category page):
-[![index_mobile](static/img/wireframes/admin_app.png)
+[![index_web](static/img/wireframes/admin_app.png)
 
 
 <a name="surface"></a>
@@ -276,6 +276,18 @@ I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScri
 I had no errors in my JavaScript files.
 
 ![javascript validator](assets/responsive/js-hint.png)
+
+## Pep8Online
+I used the pep8online to validate my python code these were the following screenshots of before and after the code was validated
+
+### Before validation with Peo8Online
+-   First page
+[![index_web](static/img/screenshots/beforepep_1.png)
+-   Second page
+[![index_web](static/img/screenshots/beforepep_2.png)
+
+### Before validation with Pep8Online
+[![index_web](static/img/screenshots/afterpep.png)
 
 ## Manual Testing
 
