@@ -1,25 +1,25 @@
 [
   {
     "name": "Steak",
-    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "description": "Meat can be cooked in many ways depending on cultures, personal taste, the dish you want to prepare and each time it is a different gastronomic experience. Certainly, one of the tastiest recipes to enjoy pure meat is the cut of beef. To prepare it artfully, it is good to choose the right cut, cook it not from cold and pay close attention to the timing to obtain a soft, juicy and perfectly pink inside meat. The sliced beef with rocket will be perfect to serve for a dinner with friends or on all occasions when your guests want to savor a succulent and substantial second course.",
     "image_source": "static/img/steak.jpg",
     "calories": 320
   },
   {
     "name": "Pasta al Pomo",
-    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "description": "Do you want a fresh and light dish for your lunch? Then spaghetti with pesto is a classic recipe! Pesto, the cornerstone of Ligurian cuisine, is a very versatile and always very popular sauce on the table, which can be used to make excellent first courses, and make pasta dishes rich and with unmistakable taste. Pesto is made with basil leaves, creating a creamy dressing that enhances the good flavors and colors of Mediterranean cuisine!",
     "image_source": "static/img/spaghetti-pomo.jpg",
     "calories": 260
   },
   {
     "name": "Chocolate",
-    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "description": "The chocolate cake is a classic and timeless dessert of Italian pastry, which everyone always likes. Every moment is the right one to enjoy a slice: tall and soft, it is perfect for a snack, made as a mug cake or in the morning to be dipped in milk for a special breakfast that will wake up with its unmistakable cocoa aroma. This cake is perfect for a party or perhaps as a base to create other original sweet preparations, with the chocolate cake you just have to collect your success!",
     "image_source": "static/img/cioccolate.jpg",
     "calories": 121
   },
   {
     "name": "Strawberry Cake",
-    "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+    "description": "We love desserts with strawberries! It’s a romantic and delicate dessert perfect for special occasions such as Mother's Day, the birthday of your best friend, an elegant tea with your best friends. The strawberry cake will repay you for the sweet effort!",
     "image_source": "static/img/strawbrry.jpg",
     "calories": 210
   }

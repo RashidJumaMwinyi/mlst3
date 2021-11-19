@@ -184,30 +184,30 @@ users before they read details about the app.
 -   The cusines/recipes below the "About" content are to showcase the first time user what the app is about in practicality.
 
 -   Footer - The footer is placed at the bottom of this page. This contains all social media links that open up in a new tab.
-[![index_web](static/img/screenshots/home.png)
+[![index_web](static/img/screenshots/home_app.png)
 
 
 ### register Page
 
 -   Contains a form to be inserted data of the user to be submitted and verified as a regular user.
-    [![index_web](static/img/screenshots/register.png)
+    [![index_web](static/img/screenshots/register_app.png)
     
 ### login Page
 
 -   Contains a form to be inserted data of the user to be login as a regular user.
-    [![index_web](static/img/screenshots/login.png)
+    [![index_web](static/img/screenshots/login_app.png)
 
 
 ### Profile Page
 
 -   Contains the cusines created by other users that can be viewed by registered users but only the creater can edit and delete them.
-    [![index_web](static/img/screenshots/profile.png)
+    [![index_web](static/img/screenshots/profile_app.png)
 
 
 ### Add Recipe Page
 -   Contains a form with data that has labeled inputs to be filled by the user optionally.
 -   The add cusine button at the bottom that confirms the entered data by the user being valid data.
-    [![index_web](static/img/screenshots/add_recipe.png)
+    [![index_web](static/img/screenshots/add_recipe_app.png)
 
 
 ### Manage categories Page
@@ -215,7 +215,7 @@ users before they read details about the app.
 -   Categories contain edit and delete button vissible to only the admin being logedin which allows the admin to update or delete the category chossen.
 
 -   Delete confirmation modal is triggered both when user and admin decide to delete an item giving them a chance to either cancel or confirm deletion.
-    [![index_web](static/img/screenshots/categories.png)
+    [![index_web](static/img/screenshots/categories_app.png)
 
 
 <a name="technologies-used"></a>
