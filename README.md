@@ -280,14 +280,14 @@ I had no errors in my JavaScript files.
 ## Pep8Online
 I used the pep8online to validate my python code these were the following screenshots of before and after the code was validated
 
-### Before validation with Peo8Online
+### Before validation with Pep8Online
 -   First page
-[![index_web](static/img/screenshots/beforepep_1.png)
+[![index_web](static/img/screenshots/beforepep8_1.png)
 -   Second page
-[![index_web](static/img/screenshots/beforepep_2.png)
+[![index_web](static/img/screenshots/beforepep8_2.png)
 
 ### Before validation with Pep8Online
-[![index_web](static/img/screenshots/afterpep.png)
+[![index_web](static/img/screenshots/afterpep8.png)
 
 ## Manual Testing
 
