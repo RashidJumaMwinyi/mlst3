@@ -20,16 +20,12 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-
-
-#Loads all the created cusines by users on the home page
+#   Loads all the created cusines by users on the home page
 @app.route("/get_cusine")
 def get_cusine():
     with open("data/cusine.json", "r") as json_data:
         data = json.load(json_data)
     return render_template("cusines.html", cusine=data)
-
-
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -59,7 +55,6 @@ def register():
     return render_template("register.html")
 
 
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -83,12 +78,11 @@ def login():
                 return redirect(url_for("login"))
 
         else:
-            # username doesn't exist
+            '''username doesn't exist'''
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
     return render_template("login.html")
-
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -97,9 +91,8 @@ def profile(username):
     username = mongo.db.user.find_one(
         {"username": session["user"]})["username"]
     # This loads recipe to the users profile
-    cusines = mongo.db.cusines.find()   
+    cusines = mongo.db.cusines.find()
     return render_template("profile.html", username=username, cusines=cusines)
-
 
 
 @app.route("/logout")
@@ -110,65 +103,70 @@ def logout():
     return redirect(url_for("login"))
 
 
-
-@app.route("/add_cusine", methods = ["GET", "POST"])
+@app.route("/add_cusine", methods=["GET", "POST"])
 def add_cusine():
+    # Add recipe
     if request.method == "POST":
         cusines = {
-            "category_name" : request.form.get("category_name"),
-            "recipe_name" : request.form.get("recipe_name"),
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
             "recipe_preparation": request.form.get("recipe_preparation"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
-            "recipe_calories": request.form.get ("recipe_calories"),
-            "created_by" : session["user"]
+            "recipe_calories": request.form.get("recipe_calories"),
+            "created_by": session["user"]
         }
         mongo.db.cusines.insert_one(cusines)
         flash("Cusine successfully Added")
-        return redirect(url_for("get_cusine"))
+        # redirects user to the profile
+        return redirect(url_for('profile', username=session['user']))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("add_cusine.html", categories = categories)
+    return render_template("add_cusine.html", categories=categories)
 
 
-
-@app.route("/edit_cusine/<cusine_id>", methods = ["GET", "POST"])
-def edit_cusine(cusine_id): 
+@app.route("/edit_cusine/<cusine_id>", methods=["GET", "POST"])
+def edit_cusine(cusine_id):
+    # edits cusine/recipe
     if request.method == "POST":
         submit = {
-            "category_name" : request.form.get("category_name"),
-            "recipe_name" : request.form.get("recipe_name"),
-            "recipe_preparation" : request.form.get("recipe_preparation"),
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_preparation": request.form.get("recipe_preparation"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_calories": request.form.get("recipe_calories"),
-            "created_by" : session["user"]
+            "created_by": session["user"]
         }
-        mongo.db.cusines.update({"_id" : ObjectId(cusine_id)}, submit)
-        flash("Cusine successfully Updated")   
+        mongo.db.cusines.update({"_id": ObjectId(cusine_id)}, submit)
+        flash("Cusine successfully Updated")
+        # redirects user to profile
+        return redirect(url_for('profile', username=session['user']))
     cusine = mongo.db.cusines.find_one({"_id": ObjectId(cusine_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_cusine.html",cusine=cusine, categories = categories)
-
+    return render_template(
+        "edit_cusine.html", cusine=cusine, categories=categories)
 
 
 @app.route("/delete_cusine/<cusine_id>")
 def delete_cusine(cusine_id):
-    mongo.db.cusines.remove({"_id":ObjectId(cusine_id)})
-    flash("Cusine successfully Deleted") 
-    return redirect(url_for("get_cusine"))
+    # deletes the cusine
+    mongo.db.cusines.remove({"_id": ObjectId(cusine_id)})
+    flash("Cusine successfully Deleted")
+    return redirect(url_for('profile', username=session['user']))
 
 
 @app.route("/get_categories")
 def get_categories():
+    # gets the categories from the database
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
-
-@app.route("/add_category", methods = ["GET", "POST"])
+@app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    # adding new category
     if request.method == "POST":
         category = {
-            "category_name" : request.form.get("category_name")
+            "category_name": request.form.get("category_name")
         }
         mongo.db.categories.insert_one(category)
         flash("New Category Added")
@@ -177,48 +175,49 @@ def add_category():
     return render_template("add_category.html")
 
 
-
-@app.route("/edit_category/<category_id>", methods = ["GET","POST"])
+@app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
+    # edit category
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name")
         }
-        mongo.db.categories.update({"_id" : ObjectId(category_id)},submit)
+        mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
         flash("Category Successfully Updated")
-        return redirect (url_for("get_categories"))
+        return redirect(url_for("get_categories"))
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
-    return render_template("edit_category.html", category = category)
-
-
+    return render_template("edit_category.html", category=category)
 
 
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
-    mongo.db.categories.remove({"_id":ObjectId(category_id)})
-    flash("Category Successfully Deleted") 
+    # detes category selected
+    mongo.db.categories.remove({"_id": ObjectId(category_id)})
+    flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
 
 
-
-# The following functions loads data from the json imported on the top to render sample html
+# The following functions loads data from the json
+#  imported on the top to render sample html
 @app.route("/pasta")
 def pasta():
     with open("data/cusine.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template("pasta.html",page_title="Pasta",cusine=data)
+    return render_template("pasta.html", page_title="Pasta", cusine=data)
 
 
-# This render's an html file with a click on the home button labelled accordingly
+# This render's an html file with
+# a click on the home button labelled accordingly
 @app.route("/beef")
 def beef():
     with open("data/cusine.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template("beef.html",page_title="beef",cusine=data)
+    return render_template("beef.html", page_title="beef", cusine=data)
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
-            debug=False)
+    app.run(host=os.environ.get(
+        "IP"), port=int(
+            os.environ.get(
+                "PORT")), debug=False)

@@ -9,7 +9,7 @@
     background-color: #161515;
 }
 
-
+/*this is for the recipes*/
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
@@ -29,19 +29,19 @@ header.masthead {
     background-size: cover;
     background-attachment: scroll;}
 
-.subheading, h1{
+/*the title head*/    
+ h1{
     color: #f9f3f3e3;
-    margin-left: 15%;
-    padding-bottom: 8%;
+    padding-left: 22%;
+    padding-bottom: 6%;
 }
-.subheading{
-    font-size: 20px;
-    margin-bottom: 20%;
-}
+
+/*the navigation bar/menu*/
 nav ul a{
     color: black;
     font-size: 1.2rem;
 }
+/* the title ofthe app*/
 nav .brand-logo {
     position: absolute;
     color: #1a1919;
@@ -69,7 +69,7 @@ nav{
     display: none;
 }
 
-
+/*images for recipes*/
 .col-md-5 img{
     width: 100%;
     border-radius: 16px;
@@ -79,7 +79,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-
+/*By admin coment tag*/
 .view-button{
     float: right;
     text-align: center;
@@ -89,6 +89,7 @@ nav{
     align-self: flex-start;
 
 }
+/* calories comment tag*/
 .item-data{
     display: block;
     margin-top: 10px;
@@ -104,7 +105,10 @@ nav{
 .modal .modal-footer .btn-small {
     margin: 6px;
 }
-
+.modal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .foot-menu ul{
     display: inline-flex;
