@@ -326,32 +326,34 @@ Please find below my testing process for all pages via mobile and web:
     -   Facebook - When selecting the Facebook icon, a new tab opens and redirects to the Facebook website. It worked as expected.
     -   YouTube - When selecting the YouTube icon, a new tab opens and redirects to the YouTube website. It worked as expected.
     -   Instagram - When selecting the Instagram icon, a new tab opens and redirects to the Instagram website. It worked as expected.
+    [![index_web](static/img/screenshots/home.png)
 
 ### Register Page
 
 -   The form response properly, all the input fields react as expected and user is able to submit their data and get verified as expected.
-
+[![index_web](static/img/screenshots/register.png)
 
 ### Login Page
 -   The form response properly, all the input fields react as expected and user is able to submit their data and get loged in their profile as expected
-
+[![index_web](static/img/screenshots/login.png)
 
 ### Profile Page
 -   The page loads the contents that was expected to run and displays the user's loged in name.
 -   The buttons to edit and delete cusines response respectively.
 -   The delete button triggers a pop up modal for delete confirmation as expected.
 -   The edit cusine form responds as programmed hence the page responded as expected
-
+[![index_web](static/img/screenshots/profile.png)
 
 ### Add Recipe Page
 -   The form for collecting data response respectively.
 -   The submit recipe button funtions as well and all worked as expected
-
+[![index_web](static/img/screenshots/add_recipe.png)
 
 ### Manage Category Page
 -   The page loads as expected and displays the content expected.
 -   Each category has an edit and delete function where they both respond as expected.
 -  The add category button responded as expected hence the page responded respectively. 
+[![index_web](static/img/screenshots/categories.png)
 
 <a name="development-cycle"></a>
 
