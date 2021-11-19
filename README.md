@@ -135,10 +135,10 @@ Web browser  page (When the register page is accessed):
 [![index_web](static/img/wireframes/register_app.png)
 
 Web browser page(When the user is registered and loged in):
-[![index_web](static/img/wireframes/profile_app.png)
+[![index_mobile](static/img/wireframes/profile_app.png)
 
 Web browser page(When the add recipe page is accessed in):
-[![index_web](static/img/wireframes/add_recipe_app.png)
+[![index_mobile](static/img/wireframes/add_recipe_app.png)
 
 
 Web browser page(When the navbar is accessed in small display):
@@ -146,7 +146,7 @@ Web browser page(When the navbar is accessed in small display):
 
 
 Web browser page(When the Admin is loged in and accessing the manage category page):
-[![index_web](static/img/wireframes/admin_app.png)
+[![index_mobile](static/img/wireframes/admin_app.png)
 
 
 <a name="surface"></a>
@@ -264,26 +264,23 @@ I used [Am I Responsive](http://ami.responsivedesign.is/) to make sure that all 
 I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within my HTML pages.
 I had no errors in the index and othe pages.
 
-![index HTML validator]
-![start_game HTML validator]
-
 I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within my CSS stylesheet.
 I had no errors in my CSS file.
 
-![css validator](assets/responsive/wc3-css-alidator-results.png)
+![css validator](static/img/screenshots/cssvalidator.png)
 
-I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript file.
-I had no errors in my JavaScript files.
 
-![javascript validator](assets/responsive/js-hint.png)
-
-## Pep8Online
-I used the pep8online to validate my python code these were the following screenshots of before and after the code was validated
 
 ### Before validation with Pep8Online
 -   First page
 [![index_web](static/img/screenshots/beforepep8_1.png)
+<<<<<<< HEAD
 -   Second page
+=======
+
+-   Second page
+
+>>>>>>> b2183865cc8e829cee5d1439fdf461cc7a237a43
 [![index_web](static/img/screenshots/beforepep8_2.png)
 
 ### Before validation with Pep8Online
