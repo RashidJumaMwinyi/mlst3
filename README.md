@@ -24,9 +24,8 @@ A live website can be found [here](https://flask-cusine3.herokuapp.com/).
 -   [4. Testing](#testing)
 -   [5. Development Cycle](#development-cycle)
 -   [6. Deployment](#deployment)
--   [7. End Product](#end-product)
--   [8. Known Bugs](#known-bugs)
--   [9. Credits](#credits)
+-   [7. Known Bugs](#known-bugs)
+-   [8. Credits](#credits)
 
 
 
@@ -176,7 +175,7 @@ I decided to use Roboto as my font of choice with sans serif as my backup font f
 users before they read details about the app.
 -   plain background - to give more of a user experience by offering more focus to the features on the app.
 -   A few number of jumbled recipes on the home page to showcase the app is about, created by the admin.
-
+    
 ### Landing Page
 
 -   Home page header image that explains to a user that the app is about food.
@@ -185,28 +184,39 @@ users before they read details about the app.
 -   The cusines/recipes below the "About" content are to showcase the first time user what the app is about in practicality.
 
 -   Footer - The footer is placed at the bottom of this page. This contains all social media links that open up in a new tab.
+[![index_web](static/img/screenshots/home.png)
+
 
 ### register Page
 
 -   Contains a form to be inserted data of the user to be submitted and verified as a regular user.
-
+    [![index_web](static/img/screenshots/register.png)
+    
 ### login Page
 
 -   Contains a form to be inserted data of the user to be login as a regular user.
+    [![index_web](static/img/screenshots/login.png)
+
 
 ### Profile Page
 
 -   Contains the cusines created by other users that can be viewed by registered users but only the creater can edit and delete them.
+    [![index_web](static/img/screenshots/profile.png)
+
 
 ### Add Recipe Page
 -   Contains a form with data that has labeled inputs to be filled by the user optionally.
 -   The add cusine button at the bottom that confirms the entered data by the user being valid data.
+    [![index_web](static/img/screenshots/add_recipe.png)
+
 
 ### Manage categories Page
 -   Can only be accessed by the admin of the app and it has the added categories and the button option for adding a new category.
 -   Categories contain edit and delete button vissible to only the admin being logedin which allows the admin to update or delete the category chossen.
 
 -   Delete confirmation modal is triggered both when user and admin decide to delete an item giving them a chance to either cancel or confirm deletion.
+    [![index_web](static/img/screenshots/categories.png)
+
 
 <a name="technologies-used"></a>
 
@@ -274,13 +284,9 @@ I had no errors in my CSS file.
 ### Before validation with Pep8Online
 -   First page
 [![index_web](static/img/screenshots/beforepep8_1.png)
-<<<<<<< HEAD
--   Second page
-=======
 
 -   Second page
 
->>>>>>> b2183865cc8e829cee5d1439fdf461cc7a237a43
 [![index_web](static/img/screenshots/beforepep8_2.png)
 
 ### Before validation with Pep8Online
@@ -326,34 +332,32 @@ Please find below my testing process for all pages via mobile and web:
     -   Facebook - When selecting the Facebook icon, a new tab opens and redirects to the Facebook website. It worked as expected.
     -   YouTube - When selecting the YouTube icon, a new tab opens and redirects to the YouTube website. It worked as expected.
     -   Instagram - When selecting the Instagram icon, a new tab opens and redirects to the Instagram website. It worked as expected.
-    [![index_web](static/img/screenshots/home.png)
 
 ### Register Page
 
 -   The form response properly, all the input fields react as expected and user is able to submit their data and get verified as expected.
-[![index_web](static/img/screenshots/register.png)
+
 
 ### Login Page
 -   The form response properly, all the input fields react as expected and user is able to submit their data and get loged in their profile as expected
-[![index_web](static/img/screenshots/login.png)
+
 
 ### Profile Page
 -   The page loads the contents that was expected to run and displays the user's loged in name.
 -   The buttons to edit and delete cusines response respectively.
 -   The delete button triggers a pop up modal for delete confirmation as expected.
 -   The edit cusine form responds as programmed hence the page responded as expected
-[![index_web](static/img/screenshots/profile.png)
+
 
 ### Add Recipe Page
 -   The form for collecting data response respectively.
 -   The submit recipe button funtions as well and all worked as expected
-[![index_web](static/img/screenshots/add_recipe.png)
+
 
 ### Manage Category Page
 -   The page loads as expected and displays the content expected.
 -   Each category has an edit and delete function where they both respond as expected.
 -  The add category button responded as expected hence the page responded respectively. 
-[![index_web](static/img/screenshots/categories.png)
 
 <a name="development-cycle"></a>
 
@@ -406,41 +410,13 @@ I used GitHub pages to deploy my final project to the cloud. To do this I had to
 
 <a name="end-product"></a>
 
-# 7. End Product
 
-[Go to the top](#table-of-contents)
-
-Please fine below a screenshot of each page:
-
-Home page web UI:
-![home page web preview](assets/responsive/web-vieindex.png)
-
-Home page mobile UI:
-![home page mobile preview](assets/responsive/index-page.png)
-
-start game page web UI:
-![start game page web preview](assets/responsive/start-game-web-preview.png)
-
-Start game page mobile:
-![start game page mobile preview](assets/responsive/start-game-mobile-previw.png)
-
-Level option page mobile:
-![level option page preview](assets/responsive/difficulty-level-example.PNG)
-
-Match page preview:
-![match page preview](assets/responsive/match-the-cards.PNG)
-
-Won page:
-![won page preview](assets/responsive/won-game.png)
-
-Losing page :
-![losing page preview](assets/responsive/lost-game.png)
 
 
 
 <a name="known-bugs"></a>
 
-# 8. Known Bugs
+# 7. Known Bugs
 
 [Go to the top](#table-of-contents)
 
@@ -452,7 +428,7 @@ Losing page :
 
 <a name="credits"></a>
 
-# 9. Credits
+# 8. Credits
 - I would like to thank my mentor Marcel who has been on the front line by offering me full support on this project, he has been encouraging and appreciative to the little I knew on my project and that increased my passion on playing around with javascript functions.
 -Sean from tutor support for some guidelines through the shaping of the project.
 
