@@ -103,7 +103,7 @@ nav{
 
 /*the delete and cancel confirmation buttons*/
 .modal .modal-footer .btn-small {
-    margin: 6px;
+    margin: 0 16px 0 16px;
 }
 .modal{
     padding-top: 20px;
