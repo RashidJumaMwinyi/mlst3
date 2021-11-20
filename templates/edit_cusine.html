@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Edit Cusine</h3>
+    <h3 class="light-blue-text text-darken-4 center-align">Edit Recipe</h3>
 
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_cusine', cusine_id=cusine._id) }}">
@@ -69,7 +69,7 @@
                         Cancel <i class="fas fa-times-circle right"></i>
                     </a>
                     <button type="submit" class="btn-large light-blue darken-1 text-shadow">
-                        Update cusine <i class="fas fa-edit right"></i>
+                        Update recipe <i class="fas fa-edit right"></i>
                     </button>
                 </div>
             </div>
