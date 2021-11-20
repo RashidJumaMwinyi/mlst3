@@ -194,7 +194,7 @@ legend{
         margin-left: 0;
     }
 
-/*Buttons for editing and canceling the cusines/recipes*/
+/*Buttons for editing and canceling the recipes*/
     .btn-large {
         height: 54px;
         line-height: 54px;
@@ -203,14 +203,11 @@ legend{
         margin-bottom: 9px;
     }
 
-    /*Buttons for editing and canceling the cusines/recipes*/
+/*Buttons for editing and canceling the cusines/recipes*/
     .btn-small {
-        height: 54px;
-        line-height: 54px;
         font-size: 15px;
-        padding: 0 28px;
-        margin-bottom: 9px;
-    }
+        padding: 0 26px;
+      }
 }
 
 @media only screen and (max-width: 370px) /* For smaller gadgets/phones: */ {
@@ -228,13 +225,10 @@ legend{
         margin-left: 0;
     }
 
-/*Buttons for editing and canceling the cusines/recipes*/
+/*Buttons for editing and canceling the recipes*/
     .btn-small {
-        height: 54px;
-        line-height: 54px;
         font-size: 15px;
-        padding: 0 28px;
-        margin-bottom: 9px;
+        padding: 0 26px;
     }
 
 
