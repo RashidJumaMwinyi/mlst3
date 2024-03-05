@@ -6,9 +6,10 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
-if os.path.exists("env.py"):
-    import env
 
+if os.path.exists("env.py"):
+    exec(open("env.py").read())
+    import env
 
 app = Flask(__name__)
 
@@ -16,7 +17,11 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
+# app.config["MONGO_DBNAME"]=env.MONGO_DBNAME
+# app.secret_key = env.SECRET_KEY
+# app.config["MONGO_URI"] = env.MONGO_URI
 mongo = PyMongo(app)
+
 
 
 @app.route("/")
@@ -216,8 +221,12 @@ def beef():
     return render_template("beef.html", page_title="beef", cusine=data)
 
 
-if __name__ == "__main__":
-    app.run(host=os.environ.get(
-        "IP"), port=int(
-            os.environ.get(
-                "PORT")), debug=False)
+# if __name__ == "__main__":
+#     app.run(host=os.environ.get(
+#         "IP"), port=int(
+#             os.environ.get(
+#                 "PORT")), debug=False)
+if __name__ == '__main__':
+    host = os.environ.get("IP", "0.0.0.0")  # Default host is '0.0.0.0'
+    port = int(os.environ.get("PORT", 5000))  # Default port is 5000
+    app.run(host=host, port=port, debug=False)
